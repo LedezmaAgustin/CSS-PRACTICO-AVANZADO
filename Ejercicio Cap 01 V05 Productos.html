@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta htto-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script tpye="text/javascript" serc="js/query.js"></script>
+		<script tpye="text/javascript">
+		$(document).ready(inicio)
+		function inicio(){
+			$("select").change(cambiacss)
+			}k
+			funtion cambiacss(){
+				var plantilla=$("select").attr("value");
+				$("plantilla").html('="Stylesheet href="css/"+plantilla+".css" type="text/css">')
+		}
+		</script>
+		<link rel=stylesheet href="Css/base.css" type="text/css">
+		<plantilla>
+
+		</plantilla>
+	</head>
+
+	<body>
+		<select name="plantilla">
+			<option value="">Selecciona una plantilla</option>
+			<option value="pc1">Plantilla para PC</option>
+			<option value="pchd">Plantilla alta definición</option>
+			<option value="movil">Plantilla para teléfono móvil</option>
+			<option value="tablet">Plantilla para tableta digital</option>
+		</select>
+		<div id="contenedor">
+			<header>
+				<div id="titulo">
+					<div id="logo">
+					</div>
+					<h1>Jose Carratala</h1>
+					<h2>eslogan de la web</h2>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="productos.html">Productos</a>
+						</li>
+						<li>
+							<a href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+Soy los productos
+
+			</section>
+			<footer>
+				<h6>(c)2022 Jose Vicente Carratala</h6>
+			</footer>
+		</div>
+	</body>
+</html> 
