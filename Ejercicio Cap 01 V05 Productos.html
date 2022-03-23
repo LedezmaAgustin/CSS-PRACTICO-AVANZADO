@@ -7,15 +7,16 @@
 		$(document).ready(inicio)
 		function inicio(){
 			$("select").change(cambiacss)
-			}k
+			}
 			funtion cambiacss(){
 				var plantilla=$("select").attr("value");
-				$("plantilla").html('="Stylesheet href="css/"+plantilla+".css" type="text/css">')
+				$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">')
 		}
 		</script>
-		<link rel=stylesheet href="Css/base.css" type="text/css">
-		<plantilla>
+		<link rel=Stylesheet href="css/base.css" type="text/css">
 
+		<plantilla>
+			<link rel=Stylesheet href="css/pc1.css" type="text/css">
 		</plantilla>
 	</head>
 
