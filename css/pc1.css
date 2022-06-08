@@ -137,7 +137,13 @@ footer{
   border: 1px dashed rgba(0, 0, 0,0.2);
   padding: 10px;
 }
-#contieneformulario form input #contieneformulario form texttarea,#contieneformulario form #botonenviar{
-  width: 95%;
-  margin-bottom: 10px;
+#contieneformulario form input,#contieneformulario form textarea,#contieneformulario form #botonenviar{ 
+width: 95%;
+margin-bottom: 10px;
+}
+#articulos{
+  width: 66%;
+}
+#articulos article{
+  width: 100%;
 }
