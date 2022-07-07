@@ -1,4 +1,4 @@
-@import url(http://font.googleapis.com/css?family=Merienda);
+
 
 body{
   background:url(../img/degradado.png), rgba(0,0,0,0.1);
@@ -220,4 +220,8 @@ aside{
 
 .contieneformulariointerior{
   padding: 10px;
+}
+#portafolio,#portafolio2,#portafolio3,#portafolio4
+  background:url(../img/DSC_9276.jpg)
+  background-size: 100% 100%;
 }

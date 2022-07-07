@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<meta htto-equiv="content-Type" content="text/html; charset=UTF-8">	
+
+
 		<link rel=Stylesheet href="css/base.css" type="text/css">
 
 		<plantilla>
-			<link rel=Stylesheet href="css/movil.css" type="text/css">
+			<link rel=Stylesheet href="css/pc1.css" type="text/css">
 		</plantilla>
 	</head>
 
@@ -85,23 +87,34 @@
 	</body>
 
 	<!-- <script tpye="text/javascript" serc="js/jquery-3.6.0.min.js"></script> -->
-	<script tpye="text/javascript" src="js/jquery-3.6.0.min2.js"></script>
+
+			<script tpye="text/javascript" src="js/jquery-3.6.0.min2.js"></script>
 	<script tpye="text/javascript">
-	$(function() {
-	    inicio();
-	});
+	
 	$(document).ready(inicio);
 	function inicio(){
 		$( "select" ).change(cambiacss);
-
-		function cambiacss(){
-			//! console log sirve para que en consola ( se abre apretando f12 ) se vea un mensaje impreso
-			console.log($("select"));
-			var plantilla=$("select").val();
-			console.log(plantilla);
-			$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">')
+		/*if(window.innerWidth <400 && (navigator.userAgent.match(iPhone/i) || navigator.usarAgent.match(Android/i))){
+			$("plantilla").html('<link rel=Stylesheet href="css/movil.css" type="text/css">')
 		}
+		if((window.innerWidth > 400 && window.innerWidth < 600) && (navigator.userAgent.match(iPad/i) || navigator.usarAgent.match(Android/i))){
+			$("plantilla").html('<link rel=Stylesheet href="css/tablet.css" type="text/css">')
+		}	
+		if(window.innerWidth > 600 && window.innerWidth < 1200){
+			$("plantilla").html('<link rel=Stylesheet href="css/tablet.css" type="text/css">')
+		}	
+		if(window.innerWidth > 1200 && window.innerWidth < 2400){
+			$("plantilla").html('<link rel=Stylesheet href="css/tablet.css" type="text/css">')
+		}*/	
+	}	
+	function cambiacss(){
+			//! console log sirve para que en consola ( se abre apretando f12 ) se vea un mensaje impreso
+		console.log($("select"));
+		var plantilla=$("select").val();
+		console.log(plantilla);
+		$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">')
 	}
+
 	</script>
 
 </html> 
