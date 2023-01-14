@@ -1,15 +1,18 @@
 <!doctype html>
 	<head>
 		<meta htto-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script tpye="text/javascript" serc="js/query.js"></script>
+		<script tpye="text/javascript" src="js/jquery-3.6.0.min2.js"></script>
 		<script tpye="text/javascript">
 		$(document).ready(inicio)
 		function inicio(){
-			$("select").change(cambiacss)
-			}
-			funtion cambiacss(){
-				var plantilla=$("select").attr("value");
-				$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">')
+			$("select").change(cambiacss);
+		}
+		function cambiacss(){
+				//! console log sirve para que en consola ( se abre apretando f12 ) se vea un mensaje impreso
+			console.log($("select"));
+			var plantilla=$("select").val();
+			console.log(plantilla);
+			$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">')
 		}
 		</script>
 		<link rel=Stylesheet href="css/base.css" type="text/css">
